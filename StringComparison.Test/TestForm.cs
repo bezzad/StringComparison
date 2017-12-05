@@ -41,7 +41,7 @@ namespace StringComparison.Test
         public void Test(string source, string target)
         {
             WriteLine("-------------------------------------------------------------");
-            WriteLine($"-------- {source} !==! {target} -----------");
+            WriteLine($"  {source}  !==!  {target}");
             WriteLine("-------------------------------------------------------------");
 
             var options = new List<StringComparisonOptions>
@@ -57,7 +57,6 @@ namespace StringComparison.Test
             WriteLine("Weak compare: " + source.IsSimilar(target, StringComparisonTolerance.Weak, options));
 
             WriteLine();
-            var levenstein = source.LevenshteinDistance(target);
             WriteLine("LevenshteinDistance: " + (1 - source.LevenshteinDistancePercentage(target)));
             WriteLine("JaccardDistance: " + source.JaccardDistance(target));
             if (source.Length == target.Length)

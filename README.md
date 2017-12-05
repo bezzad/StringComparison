@@ -1,5 +1,5 @@
 # StringComparison
-Approximate String Comparision in C#
+String Comparision in C#
 
 ## Project Description
 
@@ -22,7 +22,7 @@ I found several other similar open-source implementations around but nothing for
 * Sorensen-Dice Distance|http://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient
 * Tanimoto Coefficient|http://en.wikipedia.org/wiki/Tanimoto_coefficient#Tanimoto_coefficient_.28extended_Jaccard_coefficient.29
 
-## Approximate String Comparision
+## String Comparision
 While all of the algorithms are exposed and can be used and can provide their raw results, 
 they have been conveniently combined in a way that they can selectively be used to judge the approximate equality of two strings. 
 This is done through the `ApproximatelyEquals` extension and by setting the desired `StringComparisonOptions` and `StringComparisonTolerance`.
@@ -34,7 +34,7 @@ For two strings that are desired to be compared approximately, a boolean respons
 string source = "behzad";
 string target = "behsad";
 
-List<StringComparisonOptions> options = new List<StringComparisonOptions>();
+var options = new List<StringComparisonOptions>();
 
 // Choose which algorithms should weigh in for the comparison
 options.Add(StringComparisonOptions.UseOverlapCoefficient);
@@ -42,8 +42,9 @@ options.Add(StringComparisonOptions.UseLongestCommonSubsequence);
 options.Add(StringComparisonOptions.UseLongestCommonSubstring);
 
 // Choose the relative strength of the comparison - is it almost exactly equal? or is it just close?
-StringComparisonTolerance tolerance = StringTolerance.Strong;
+var tolerance = StringComparisonTolerance.Strong;
 
 // Get a boolean determination of approximate equality
-bool result = source.ApproximatelyEquals(target, options, tolerance);
+bool result = source.IsSimilar(target, options, tolerance);
+double howManySimilar = source.SimilarityPercent(target, options);
 ```
