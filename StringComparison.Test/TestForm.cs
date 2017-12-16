@@ -47,11 +47,10 @@ namespace StringComparison.Test
             var options = new List<StringComparisonOptions>
             {
                 StringComparisonOptions.UseJaccardDistance,
-                StringComparisonOptions.UseLevenshteinDistance,
-                StringComparisonOptions.UseHammingDistance
+                StringComparisonOptions.UseLevenshteinDistance
             }.ToArray();
 
-            WriteLine("String Comparison: %" + source.SimilarityPercent(target, options) * 100);
+            WriteLine("String Comparison: %" + source.Similarity(target, options) * 100);
             WriteLine("Strong compare: " + source.IsSimilar(target, StringComparisonTolerance.Strong, options));
             WriteLine("Normal compare: " + source.IsSimilar(target, StringComparisonTolerance.Normal, options));
             WriteLine("Weak compare: " + source.IsSimilar(target, StringComparisonTolerance.Weak, options));

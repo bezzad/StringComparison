@@ -103,7 +103,7 @@ namespace StringCompration.Core
             return comparisonResults.Average();
         }
 
-        public static double SimilarityPercent(this string source, string target, params StringComparisonOptions[] options)
+        public static double Similarity(this string source, string target, params StringComparisonOptions[] options)
         {
             return 1 - DiffPercent(source, target, options);
         }
