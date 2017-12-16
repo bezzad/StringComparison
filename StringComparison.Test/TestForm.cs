@@ -44,11 +44,8 @@ namespace StringComparison.Test
             WriteLine($"  {source}  !==!  {target}");
             WriteLine("-------------------------------------------------------------");
 
-            var options = new List<StringComparisonOptions>
-            {
-                StringComparisonOptions.UseJaccardDistance,
-                StringComparisonOptions.UseLevenshteinDistance
-            }.ToArray();
+            var options = StringComparisonOption.UseJaccardDistance | 
+                          StringComparisonOption.UseLevenshteinDistance;
 
             WriteLine("String Comparison: %" + source.Similarity(target, options) * 100);
             WriteLine("Strong compare: " + source.IsSimilar(target, StringComparisonTolerance.Strong, options));

@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Enums\StringComparisonOptions.cs" />
+    <Compile Include="Core\Enums\StringComparisonOption.cs" />
     <Compile Include="Core\JaroDistance.cs" />
     <Compile Include="Core\JaroWinklerDistance.cs" />
     <Compile Include="Core\LongestCommonSubsequence.cs" />
