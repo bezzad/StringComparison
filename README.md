@@ -25,7 +25,7 @@ I found several other similar open-source implementations around but nothing for
 ## String Comparision
 While all of the algorithms are exposed and can be used and can provide their raw results, 
 they have been conveniently combined in a way that they can selectively be used to judge the approximate equality of two strings. 
-This is done through the `ApproximatelyEquals` extension and by setting the desired `StringComparisonOptions` and `StringComparisonTolerance`.
+This is done through the `IsSimilar` extension and by setting the desired `StringComparisonOptions` and `StringComparisonTolerance`.
 
 For two strings that are desired to be compared approximately, a boolean response of equality can be garnered in the following way:
 
