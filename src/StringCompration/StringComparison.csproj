@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{71AC699A-366B-4DFA-896C-282318EE4A1B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>StringCompration</RootNamespace>
-    <AssemblyName>StringCompration</AssemblyName>
+    <RootNamespace>StringComparison</RootNamespace>
+    <AssemblyName>StringComparison</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

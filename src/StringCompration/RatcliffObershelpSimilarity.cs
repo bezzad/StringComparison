@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace StringCompration
+namespace StringComparison
 {
     public static partial class ComparisonMetrics
     {

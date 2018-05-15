@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace StringCompration.Properties {
+namespace StringComparison.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

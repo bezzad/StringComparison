@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using StringCompration;
-using StringCompration.Enums;
+using StringComparison.Enums;
 
 namespace StringComparison.Test
 {

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace StringCompration
+namespace StringComparison
 {
     public static partial class ComparisonMetrics
     {

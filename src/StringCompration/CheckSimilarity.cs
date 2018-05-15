@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using StringCompration.Enums;
+using StringComparison.Enums;
 
-namespace StringCompration
+namespace StringComparison
 {
     public static partial class ComparisonMetrics
     {

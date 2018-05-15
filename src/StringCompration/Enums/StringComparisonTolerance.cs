@@ -1,4 +1,4 @@
-﻿namespace StringCompration.Enums
+﻿namespace StringComparison.Enums
 {
     public enum StringComparisonTolerance
     {

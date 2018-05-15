@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StringCompration.Enums
+namespace StringComparison.Enums
 {
     [Flags]
     public enum StringComparisonOption
