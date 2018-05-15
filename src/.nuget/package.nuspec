@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata minClientVersion="2.8">
+    <id>StringCompration</id>
+    <title>String Compration</title>
+    <!--<iconUrl></iconUrl>-->
+    <version>1.0.2</version>
+    <description>
+      StringComparison is a library developed for reconciling naming conventions 
+      between different models of the electric grid. 
+      I have stripped off the power system specific code and put together 
+      what can effectively be used as a string extension for determining approximate 
+      equality between two strings. All of the algorithms used here have been pulled 
+      from online resources, translated into C#, and compiled into this library. 
+      I found several other similar open-source implementations around but nothing for .NET/C#. 
+      Adding the *.dll to your project will give you access to this extension and 
+      the individual extensions under the hood of the IsSimilarity() extension.
+    </description>
+    <summary>
+      While all of the algorithms are exposed and can be used and can provide their raw results,
+      they have been conveniently combined in a way that they can selectively
+      be used to judge the approximate equality of two strings.
+    </summary>
+    <authors>Behzad Khosravifar</authors>
+    <owners>Behzad Khosravifar</owners>
+    <licenseUrl>http://www.gnu.org/licenses/gpl.txt</licenseUrl>
+    <projectUrl>https://github.com/Behzadkhosravifar/StringCompration</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+      * First release
+    </releaseNotes>
+    <copyright>Copyright (C) 2017-2018 Behzad Khosravifar. Contacts: &lt;behzad.khosravifar@gmail.com&gt;</copyright>
+    <tags>
+      strings, levenshtein, tanimoto, Hamming, jaccardm, distance, jaro, 
+      winkler, longest, subsequence, overlap, coefficient, ratcliff, obershelp, similarity,
+      text, compare, sorensen, dice
+    </tags>
+  </metadata>
+  <files>
+    <file src="..\..\Out\*.dll" target="lib/net45" />
+    <file src="..\..\README.md" target="" />
+  </files>
+</package>
