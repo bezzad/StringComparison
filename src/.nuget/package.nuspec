@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata minClientVersion="2.8">
-    <id>StringCompration</id>
-    <title>String Compration</title>
+    <id>StringComparison</id>
+    <title>String Comparison</title>
     <!--<iconUrl></iconUrl>-->
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <description>
-      StringComparison is a library developed for reconciling naming conventions 
-      between different models of the electric grid. 
-      I have stripped off the power system specific code and put together 
-      what can effectively be used as a string extension for determining approximate 
-      equality between two strings. All of the algorithms used here have been pulled 
-      from online resources, translated into C#, and compiled into this library. 
-      I found several other similar open-source implementations around but nothing for .NET/C#. 
-      Adding the *.dll to your project will give you access to this extension and 
+      StringComparison is a library developed for reconciling naming conventions
+      between different models of the electric grid.
+      I have stripped off the power system specific code and put together
+      what can effectively be used as a string extension for determining approximate
+      equality between two strings. All of the algorithms used here have been pulled
+      from online resources, translated into C#, and compiled into this library.
+      I found several other similar open-source implementations around but nothing for .NET/C#.
+      Adding the *.dll to your project will give you access to this extension and
       the individual extensions under the hood of the IsSimilarity() extension.
     </description>
     <summary>

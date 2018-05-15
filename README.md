@@ -1,6 +1,6 @@
-# StringComparison
+# String Comparison
 
-String Comparision for C#.NET
+String Comparison for C#.NET
 
 ## Project Description
 
