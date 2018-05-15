@@ -1,3 +1,9 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/ha4n02pu9jsraq1t?svg=true)](https://ci.appveyor.com/project/Behzadkhosravifar/stringcomparison)
+[![nuget version](https://img.shields.io/nuget/v/stringcomparison.svg)](https://www.nuget.org/packages/stringcomparison)
+[![Nuget downloads](http://img.shields.io/nuget/dt/stringcomparison.svg)](https://www.nuget.org/packages/stringcomparison/)
+
+----------------------------------------------------
+
 # String Comparison
 
 String Comparison for C#.NET
