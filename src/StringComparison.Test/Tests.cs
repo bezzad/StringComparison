@@ -58,6 +58,7 @@ public class Tests(ITestOutputHelper output)
             }
 
             var toleranceName = tolerance < 4 ? ((StringComparisonTolerance)tolerance).ToString() : "!";
+            Assert.True((tolerance < 4) == source.IsSimilar(target, StringComparisonTolerance.Weak, sOpt));
             output.WriteLine($"{option.ToString()} Similarity: % {source.Similarity(target, sOpt) * 100} {toleranceName}");
             output.WriteLine($"{option.ToString()} Distance: " + source.DiffPercent(target, sOpt));
             output.WriteLine("");
