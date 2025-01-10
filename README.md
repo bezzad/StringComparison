@@ -10,9 +10,9 @@ String Comparison for C#.NET
 
 ## Project Description
 
-StringComparison is a library developed for reconciling naming conventions between different models of the electric grid. 
+StringComparison is a library developed for reconciling naming conventions between different models of the electric grid.
 I have stripped off the power system specific code and put together what can effectively be used as a string extension for determining approximate equality between two strings.
-All of the algorithms used here have been pulled from online resources, translated into C#, and compiled into this library. 
+All of the algorithms used here have been pulled from online resources, translated into C#, and compiled into this library.
 I found several other similar open-source implementations around but nothing for .NET/C#. Adding the *.dll to your project will give you access to this extension and the individual extensions under the hood of the `IsSimilarity()` extension.
 
 ## Algorithms included in this project
@@ -31,8 +31,8 @@ I found several other similar open-source implementations around but nothing for
 
 ## String Comparision
 
-While all of the algorithms are exposed and can be used and can provide their raw results, 
-they have been conveniently combined in a way that they can selectively be used to judge the approximate equality of two strings. 
+While all of the algorithms are exposed and can be used and can provide their raw results,
+they have been conveniently combined in a way that they can selectively be used to judge the approximate equality of two strings.
 This is done through the `IsSimilar` extension and by setting the desired `StringComparisonOptions` and `StringComparisonTolerance`.
 
 For two strings that are desired to be compared approximately, a boolean response of equality can be garnered in the following way:
@@ -66,7 +66,7 @@ var tolerance = StringComparisonTolerance.Strong;
 // Get a boolean determination of approximate equality
 bool result = source.IsSimilar(target, options, tolerance);
 double howManySimilar = source.SimilarityPercent(target, options);
-double simLevenshtein = 1 - source.LevenshteinDistancePercentage(target);
+double simLevenshtein = source.LevenshteinDistancePercentage(target);
 double simJaro = 1 - source.JaroDistance(target);
 
 ```
